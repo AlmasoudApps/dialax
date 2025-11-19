@@ -104,8 +104,8 @@
   }
 
   function generateQuestion() {
-    num1 = Math.floor(Math.random() * 11) + 1;
-    num2 = Math.floor(Math.random() * 11) + 1;
+    num1 = Math.floor(Math.random() * 6) + 1;
+    num2 = Math.floor(Math.random() * 6) + 1;
     questionBox.textContent = `${num1} × ${num2} = ؟`;
     attempts = 0;
     answerInput.value = "";
@@ -147,7 +147,7 @@
     clearInterval(timer);
 
     if (userAnswer === correct) {
-      showModal("شطارااا ديالا! إجابة صحيحة 🎉", "🎀", "#28a745", true);
+      showModal("أحسنتي ديالا! إجابة صحيحة 🎉", "🎀", "#28a745", true);
     } else {
       attempts++;
       if (attempts === 1) {
@@ -162,3 +162,4 @@
 </script>
 </body>
 </html>
+
